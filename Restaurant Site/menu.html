@@ -2,47 +2,149 @@
 <!--
   Name: Jon Casurella
   Date Created: 01/12/2020
-  Most Recent revision:
+  Most Recent revision:01/24/2020
 -->
 <html lang="en">
   <head>
+    <meta chartset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Menu</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+      table, th, td {
+      border: 1px solid #0d1f2d;
+      border-collapse: collapse;
+      padding: 5px 10px;
+      }
+      table {
+      width:90%;
+      margin: auto;
+      }
+      tr {
+      height: 30px;
+      }
+      th {
+      background-color: #B22222;
+      color: #f2eded;
+      text-align: justify;
+      }
+      tr:nth-child(odd) {
+      background-color: #fef9ff;
+      }
+      tr:nth-child(even) {
+      background-color: #228B22;
+      color: #f2eded;
+      }
+      p {
+        text-align: center;
+      }
+      #name {
+        font-size: x-large;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Casurella's</h1>
+      <div id="news"><h6>We are opening a new location in Minneapolis!</h6></div>
+    </header>
     <nav>
-      <hr />
-      <p><a href="home.html">Home</a></p>
-      <p><a href="menu.html">Menu</a></p>
-      <p><a href="contact.html">Contact Us</a></p>
-      <hr />
+      <div class="row">
+      <p><a class="btn badge-pill" href="home.html"><i class="fa fa-home"></i></a></p>
+      <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+      <p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+    </div>
     </nav>
-  </header>
-  <section>
-    <p><b>Pizza Napoli</b></p>
-    <p>Authentic Napoli style pizza with fresh mozzarella cheese and rich pizza sauce. Toppings available for an additional charge.</p>
-    <p>$10.95</p>
-    <p><b>Spaghetti</b></p>
-    <p>Our spaghetti noodles are made in-house from the best grains and our sauce is rich and flavorful.</p>
-    <p>$9.95</p>
-    <p><b>Fettuccine Alfredo</b></p>
-    <p>Our fettuccine alfredo is made with house noodles and the freshest ingredients. All ingredients are locally sourced.<p>
-    <p>$9.95</p>
-    <p><b>Frittle</b></p>
-    <p>Our Italian sauage is rolled into the bread. The Frittle is baked fresh for each order.</p>
-    <p>$8.95<p>
-    <p><b>Four Cheese Ravioli</b></p>
-    <p>Our Ravioli is made fresh every day. The cheese is a mix of locally sourced cheese and cheese imported directly from Italy.</p>
-    <p>$10.95</p>
-    <p><b>Tiramisu</b></p>
-    <p>For dessert, our tiramisu is rich and sweet. You can order for yourself or to share with that special someone.</p>
-    <p>$5.95</p>
-  </section>
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h3>We're opening a new location!</h3>
+    </div>
+    <div class="carousel-item">
+      <h3>We're rolling out our seasonal menu, with special options for this season.</h3>
+    </div>
+    <div class="carousel-item">
+      <h3>The Drink of the Month is SG Special Brew.</h3>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<noscript>This site is best viewed with JavaScript enabled!</noscript>
+    <br />
+    <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-3">
+    <p><span id=name>Pizza Napoli</span><br>Authentic Napoli style pizza with fresh mozzarella cheese and rich pizza sauce. Toppings available for an additional charge.<br>$10.95</p>
+  </div>
+  <div class="col-3">
+    <p><span id=name>Spaghetti</span><br>Our spaghetti noodles are made in-house from the best grains and our sauce is rich and flavorful.<br>$9.95</p>
+  </div>
+  <div class="col-3">
+    <p><span id=name>Fettuccine Alfredo</span><br>Our fettuccine alfredo is made with house noodles and the freshest ingredients. All ingredients are locally sourced.<br>$9.95</p>
+    </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-3">
+    <p><span id=name>Frittle</span><br>Our Italian sauage is rolled into the bread. The Frittle is baked fresh for each order.<br>$8.95<p>
+      </div>
+      <div class="col-3">
+    <p><span id=name>Four Cheese Ravioli</span><br>Our Ravioli is made fresh every day. The cheese is a mix of locally sourced cheese and cheese imported directly from Italy<br>
+    $10.95</p>
+    </div>
+    <div class="col-3">
+    <p><span id=name>Tiramisu</span><br>For dessert, our tiramisu is rich and sweet. You can order for yourself or to share with that special someone.<br>$5.95</p>
+  </div>
+  </div>
+    <br />
+    <table class="col-6">
+      <thread>
+          <tr>
+              <th>Beverages</th>
+              <th>Price</th>
+          </tr>
+      </thread>
+      <tbody>
+          <tr>
+              <td>Root Beer</td>
+              <td>$3.00</td>
+          </tr>
+          <tr>
+              <td>Bottled Water</td>
+              <td>$1.25</td>
+          </tr>
+          <tr>
+              <td>Lemonade</td>
+              <td>$1.00</td>
+          </tr>
+          <tr>
+              <td>Iced Tea</td>
+              <td>$1.25</td>
+          </tr>
+      </tbody>
+    </table>
+    <br />
+</div>
     <footer>
-      <hr />
       <h3>167 Grand Ave, St. Paul, MN, 55102</h3>
       <h3>(651) 867-5309</h3>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>

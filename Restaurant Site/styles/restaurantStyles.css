@@ -1,0 +1,49 @@
+/*
+Creator: Jon Casurella
+Date Created: 01/18/2020
+Date last modified:
+*/
+header, footer {
+  color: #fef9ff;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+  background-color: #B22222;
+}
+header {
+  font-family: "Lucida Calligraphy", sans-serif;
+}
+#news {
+  text-align: right;
+  font-family: sans-serif;
+}
+#carouselIndicators {
+  text-align: center;
+  background-color: #228B22;
+  color: #fef9ff;
+  padding-bottom: 30px
+}
+body {
+    background-color: #deb887;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    background-color: #fef9ff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+nav .btn {
+  background-color: #228B22;
+  color: #fef9ff;
+  margin-left: 20px;
+}
+nav a:visited {
+  color: #B22222;
+}
+nav a:hover {
+  font-weight: bold;
+  color: #fef9ff;
+}
+nav a:active {
+  text-decoration: none;
+}

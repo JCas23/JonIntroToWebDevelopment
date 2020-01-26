@@ -2,32 +2,79 @@
 <!--
   Name: Jon Casurella
   Date Created: 01/12/2020
-  Most Recent revision:
+  Most Recent revision: 01/24/2020
 -->
 <html lang="en">
   <head>
+    <meta chartset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Home Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
       <h1>Casurella's</h1>
+      <div id="news"><h6>We are opening a new location in Minneapolis!</h6></div>
     </header>
     <nav>
-      <hr />
-      <p><a href="home.html">Home</a></p>
-      <p><a href="menu.html">Menu</a></p>
-      <p><a href="contact.html">Contact Us</a></p>
-      <hr />
+      <div class="row">
+      <p><a class="btn badge-pill" href="home.html"><i class="fa fa-home"></i></a></p>
+      <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+      <p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+      </div>
     </nav>
-    <section>
-      <img src="images/freshpizza.jpg" alt="Photo of fresh pizza" style="width:400px;">
-      <p>Restaurant Description</p>
-      <p>Casurella's is a family-owned, Italian Restaurant. We serve authentic Italian Cuisine in a cozy setting that is perfect for couples and families. In addition, we have spaces for private events. Our dishes are always prepared with the freshest ingredients, locally sourced whenever possible. Aside from the numerous Italian dishes and appetizers, we have a excellent wine collection for discerning tastes.</p>
-    </section>
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h3>We're opening a new location!</h3>
+    </div>
+    <div class="carousel-item">
+      <h3>We're rolling out our seasonal menu, with special options for this season.</h3>
+    </div>
+    <div class="carousel-item">
+      <h3>The Drink of the Month is SG Special Brew.</h3>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<noscript>This site is best viewed with JavaScript enabled!</noscript>
+    <div class="container">
+    <br />
+    <div class="text-center">
+      <div class="col-lg-12">
+      <img src="images/italian-pizza.jpg" alt="Photo of fresh pizza" width="400" class="img-fluid" />
+    </div>
+    </div>
+    <br />
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <p>Restaurant Description<br>Casurella's is a family-owned, Italian Restaurant. We serve authentic Italian Cuisine in a cozy setting that is perfect for couples and families. In addition, we have spaces for private events. Our dishes are always prepared with the freshest ingredients, locally sourced whenever possible. Aside from the numerous Italian dishes and appetizers, we have a excellent wine collection for discerning tastes.</p>
+        </div>
+      </div>
+      <br />
+  </div>
     <footer>
-      <hr />
       <h3>167 Grand Ave, St. Paul, MN, 55102</h3>
       <h3>(651) 867-5309</h3>
     </footer>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
 </html>
